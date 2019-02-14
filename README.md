@@ -19,10 +19,49 @@ GloVe源码可参考 https://github.com/stanfordnlp/GloVe 或windows平台 vs201
   
   输入：原始wiki百科文件即F://paper//data//wiki2010/wiki2010.txt
   
-  输出：区分不同语义标注文件F://paper//data//wiki2010/wiki_pwd.txt 。
+  输出：区分不同语义标注文件F://paper//data//wiki2010/wiki_pwd.txt 
+  
   标注文件效果如下：
   
-  ![Image text](https://github.com/reason519/crawl_bdwksp/blob/master/img/%E7%BD%91%E5%9D%80%E4%BF%AE%E6%94%B9%E4%BD%8D%E7%BD%AE.JPG)
+  ![Image text](https://github.com/reason519/multi_sense_wordvec/blob/master/img/%E5%8E%9F%E5%A7%8B%E6%96%87%E6%9C%AC%E8%AF%8D%E4%B9%89%E6%B6%88%E5%B2%90%E7%BB%93%E6%9E%9C%E7%A4%BA%E4%BE%8B.JPG)
   
-2、
+2、使用gen_voc.py生成所有词语的词典
+
+  例如：
+  
+  python gen_voc.py F://paper//data//wiki2010/wiki_pwd.txt context_voc_all.txt  sense_voc_all.txt  word_to_sense_all.txt
+  
+  输入：步骤1中生成标注文件 F://paper//data//wiki2010/wiki_pwd.txt
+  
+  输出：
+  
+      词语词典：context_voc_all.txt
+      
+      语义项词典：sense_voc_all.txt
+      
+      词语与语义项之间的对应关系：word_to_sense_all.txt
+      
+3、过滤低频词 保留常用的40w个单词(process_voc_40w.py)
+
+例如：
+
+python process_voc_40w.py context_voc_all.txt sense_voc_all.txt ord_to_sense_all.txt context_voc.txt sense_voc.txt word_to_sense.txt
+
+输入：
+
+    包含所有词语词典：context_voc_all.txt
+    
+    包含所有语义项词典：sense_voc_all.txt
+    
+    包含所有词语与语义项之间的对应关系：word_to_sense_all.txt
+    
+输出：
+
+    40w词语词典：context_voc_all.txt
+    
+    40w语义项词典：sense_voc_all.txt
+    
+    40w词语与语义项之间的对应关系：word_to_sense_all.txt
+    
+
 
