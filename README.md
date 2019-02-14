@@ -75,6 +75,6 @@ python process_voc_40w.py context_voc_all.txt sense_voc_all.txt ord_to_sense_all
 2、 shuffle过程与原始GloVe模型一致，不需要任何代码修改，可参考https://github.com/stanfordnlp/GloVe/blob/master/src/shuffle.c
 
 3、glove训练过程代码，该部分代码与原始GloVe的代码做了较大的变动，具体可参考glove.c文件，将该文件拷入VS2017中修改文件中409-413行中的输入输出位置即可使用
-![Image text]https://github.com/reason519/multi_sense_wordvec/blob/master/img/glove%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE.JPG
+![Image text](https://github.com/reason519/multi_sense_wordvec/blob/master/img/glove%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E8%BE%93%E5%85%A5%E4%BD%8D%E7%BD%AE.JPG)
 
 
