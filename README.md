@@ -66,3 +66,14 @@ python process_voc_40w.py context_voc_all.txt sense_voc_all.txt ord_to_sense_all
     
 ## 使用改进GloVe训练多语义词向量
 
+1、使用修改后的cooccur.c生成共现矩阵
+   
+   cooccur.c文件中476-479行为词典、词义项和标注维基百科输入路径（可根据需要进行修改）
+   
+   ![Image text](https://github.com/reason519/multi_sense_wordvec/blob/master/img/%E5%8E%9F%E5%A7%8B%E6%96%87%E6%9C%AC%E8%AF%8D%E4%B9%89%E6%B6%88%E5%B2%90%E7%BB%93%E6%9E%9C%E7%A4%BA%E4%BE%8B.JPG)
+   
+2、 shuff过程与原始GloVe模型一致，不需要任何代码修改，可参考https://github.com/stanfordnlp/GloVe/blob/master/src/shuffle.c
+
+3、
+
+
