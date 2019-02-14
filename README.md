@@ -11,6 +11,7 @@ GloVe源码可参考 https://github.com/stanfordnlp/GloVe 或windows平台 vs201
 本实验代码均在win10下完成，其中多语义词向量训练使用visual studio 2017 平台
 
 # 实验步骤
+## 预处理
 1、使用process_wiki.py文件处理原始wiki百科文件，生成标注语料库
 
   例如：
@@ -63,5 +64,5 @@ python process_voc_40w.py context_voc_all.txt sense_voc_all.txt ord_to_sense_all
     
     40w词语与语义项之间的对应关系：word_to_sense_all.txt
     
-
+## 使用改进GloVe训练多语义词向量
 
