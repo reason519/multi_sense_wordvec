@@ -58,11 +58,11 @@ python process_voc_40w.py context_voc_all.txt sense_voc_all.txt ord_to_sense_all
     
 输出：
 
-    40w词语词典：context_voc_all.txt
+    40w词语词典：context_voc.txt
     
-    40w语义项词典：sense_voc_all.txt
+    40w语义项词典：sense_voc.txt
     
-    40w词语与语义项之间的对应关系：word_to_sense_all.txt
+    40w词语与语义项之间的对应关系：word_to_sense.txt
     
 ## 使用改进GloVe训练多语义词向量
 
